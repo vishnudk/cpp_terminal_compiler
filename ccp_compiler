@@ -1,0 +1,12 @@
+#!/bin/bash
+clear
+echo "$(tput setaf 1) Welcome to cpp terminal compiler"
+echo -n "$(tput setaf 4)enter the file location : "
+read file_location
+echo -n "enter the file name : "
+read file_name
+cd 
+cd $file_location
+out_put="output1" 
+gcc $file_name -o $out_put
+./$out_put
